@@ -23,33 +23,33 @@
 
   <main>
     <h2>Buy TikTok Coins</h2>
-    <p>Select a package or create a custom order (min. 200 coins, 1 coin = 2 Birr).</p>
+    <p>Select a package or create a custom order (min. 200 coins, 1 coin = 1 ETB).</p>
     <div class="packages">
       <!-- Fixed Packages -->
       <div class="package">
         <img src="coin.png" alt="50 Coins" />
-        <h3>50 Coins - 100 Birr</h3>
-        <button onclick="buyNow(50, 100)">Buy Now</button>
+        <h3>50 Coins - 50 ETB</h3>
+        <button onclick="buyNow(50, 50)">Buy Now</button>
       </div>
       <div class="package">
         <img src="coin.png" alt="100 Coins" />
-        <h3>100 Coins - 200 Birr</h3>
-        <button onclick="buyNow(100, 200)">Buy Now</button>
+        <h3>100 Coins - 100 ETB</h3>
+        <button onclick="buyNow(100, 100)">Buy Now</button>
       </div>
       <div class="package">
         <img src="coin.png" alt="500 Coins" />
-        <h3>500 Coins - 1000 Birr</h3>
-        <button onclick="buyNow(500, 1000)">Buy Now</button>
+        <h3>500 Coins - 500 ETB</h3>
+        <button onclick="buyNow(500, 500)">Buy Now</button>
       </div>
       <div class="package">
         <img src="coin.png" alt="1000 Coins" />
-        <h3>1000 Coins - 2000 Birr</h3>
-        <button onclick="buyNow(1000, 2000)">Buy Now</button>
+        <h3>1000 Coins - 1000 ETB</h3>
+        <button onclick="buyNow(1000, 1000)">Buy Now</button>
       </div>
       <div class="package">
         <img src="coin.png" alt="5000 Coins" />
-        <h3>5000 Coins - 10000 Birr</h3>
-        <button onclick="buyNow(5000, 10000)">Buy Now</button>
+        <h3>5000 Coins - 5000 ETB</h3>
+        <button onclick="buyNow(5000, 5000)">Buy Now</button>
       </div>
       <!-- Custom Order Option -->
       <div class="package custom-package">
@@ -71,7 +71,7 @@
         alert("Please enter a valid coin amount (minimum 200 coins).");
         return;
       }
-      let price = coins * 2; // 1 coin = 2 Birr
+      let price = coins * 1; // 1 coin = 1 ETB
       window.location.href = `order.html?coins=${coins}&price=${price}`;
     }
   </script>
